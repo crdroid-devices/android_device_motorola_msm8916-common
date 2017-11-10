@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-static const char* process_name = "unknown";
+static const char* process_name = "system_server";
 
-const char* get_process_name(void) {
-    return process_name;
+extern "C" const char*
+get_process_name(void) {
+  return process_name;
 }

@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     gps.msm8916 \
-    libshims_get_process_name
+    libshim_gps
 
 # IRSC
 PRODUCT_COPY_FILES += \
