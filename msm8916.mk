@@ -133,9 +133,11 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
-    gps.msm8916 \
-    libshims_get_process_name
+    android.hardware.gnss@1.0-impl-qti \
+    android.hardware.gnss@1.0-service-qti \
+    libgnss \
+    gps.conf
+
 
 # HIDL
 PRODUCT_COPY_FILES += \
