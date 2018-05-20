@@ -160,7 +160,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     gps.msm8916 \
     libshim_gps
-	
+
 # GPS Configs
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/gps/configs/flp.conf:system/etc/flp.conf \
@@ -205,9 +205,12 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libOmxVenc \
     libOmxVidcCommon \
     libstagefrighthw
+
+# Prebuilt OMX
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libOmxVenc.so:system/vendor/lib/libOmxVenc.so
 
 # Power
 PRODUCT_PACKAGES += \
