@@ -160,6 +160,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     gps.msm8916 \
     libshim_gps
+	
+# GPS Configs
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/gps/configs/flp.conf:system/etc/flp.conf \
+	$(LOCAL_PATH)/gps/configs/gps.conf:system/etc/gps.conf \
+	$(LOCAL_PATH)/gps/configs/izat.conf:system/etc/izat.conf \
+	$(LOCAL_PATH)/gps/configs/sap.conf:system/etc/sap.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
