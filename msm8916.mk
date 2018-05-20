@@ -182,6 +182,11 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.msm8916
 
+# Location
+PRODUCT_PACKAGES += \
+	com.android.location.provider \
+	com.android.location.provider.xml
+
 # LineageActions
 PRODUCT_PACKAGES += \
     LineageActions
